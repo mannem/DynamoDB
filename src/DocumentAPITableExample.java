@@ -39,13 +39,13 @@ public class DocumentAPITableExample {
     	client.setRegion(Region.getRegion(Regions.US_WEST_2)); 
         
     	createExampleTable();
-        listMyTables();
-        getandParseTableInfoForCapacity();
+        //listMyTables();
+        //getandParseTableInfoForCapacity();
         loadTableInformation();
-        updateExampleTable();
-        queryTable();
+        //updateExampleTable();
+        //queryTable();
         //schemaDescribe();
-        deleteExampleTable();
+        //deleteExampleTable();
         
     }
 
@@ -335,7 +335,7 @@ public class DocumentAPITableExample {
     	spec2.withProjectionExpression("Color[0]");
     	System.out.println(table.getItem(spec2).toJSON());
 
-    	
+   //add more queries here 	
     	
     }
     
